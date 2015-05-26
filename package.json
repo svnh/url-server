@@ -1,23 +1,26 @@
 {
-  "name": "celtra",
+  "name": "url-parser",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha "
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/svnh/celtra.git"
+    "url": "git+https://github.com/svnh/url-parser.git"
   },
   "author": "Savannah Kunovsky (sekunovsky@gmail.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/svnh/celtra/issues"
+    "url": "https://github.com/svnh/url-parser/issues"
   },
-  "homepage": "https://github.com/svnh/celtra#readme",
+  "homepage": "https://github.com/svnh/url-parser#readme",
   "dependencies": {
-    "express": "4.11.2"
+    "chai": "^2.3.0",
+    "express": "4.11.2",
+    "mocha": "^2.2.5",
+    "request": "^2.55.0"
   }
 }

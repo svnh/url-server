@@ -18,6 +18,21 @@ app.get('/urls', function(req, res) {
   res.json(urls);
 });
 
+app.get('/urls/delete', function(req, res) {
+  // TODO: delete the url
+  res.sendStatus(200);
+});
+
+app.get('/urls/create', function(req, res) {
+  // TODO: create a url
+  res.sendStatus(200);
+});
+
+app.get('/urls/update', function(req, res) {
+  // TODO: update the url
+  res.sendStatus(200);
+});
+
 app.get('/', function(req, res) {
   // Use express static file server to serve HTML
   res.sendFile('index.html', { root: fileName });
