@@ -1,0 +1,12 @@
+<div>
+  <div ng-repeat="(folder, urls) in folders">
+    <span ng-click="f.open = !f.open">
+      <span ng-show="f.open"> &#171; </span>
+      <span ng-show="!f.open"> &#187; </span>
+    </span>
+    {{ folder }}
+    <div ng-show="f.open" ng-repeat="url in urls">
+      <li><a href="{{url}}">{{ url }}</a></li>
+    </div>
+  </div>
+</div>

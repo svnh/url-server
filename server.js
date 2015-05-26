@@ -1,16 +1,26 @@
 // Third party libraries
 var express = require('express');
+
+// Express server config
 var app = express();
 
 // Environment variables
 var port = process.env.PORT || 3000;
+var dir = __dirname;
 
 // Import data
-var urls = require(__dirname + '/data/urls.json');
+var urls = require(dir + '/data/urls.json');
 
 // Create routes
+app.get('/urls', function(req, res) {
+  res.json(urls);
+});
+
 app.get('/', function(req, res) {
-  res.send(200);
+  var fileName = dir + '/public';
+  app.use(express.static(fileName));
+
+  res.sendFile('index.html', { root: fileName });
 });
 
 // Start server

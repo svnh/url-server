@@ -1,15 +1,15 @@
 {
-  "firstPage": [
+  "firstFolder": [
     "http://www.celtra.com/",
     "http://www.amazon.com/",
     "http://www.wikipedia.org/"
   ],
-  "secondPage": [
+  "secondFolder": [
     "http://www.google.com/",
     "http://www.facebook.com/",
     "http://www.youtube.com/"
   ],
-  "thirdPage": [
+  "thirdFolder": [
     "http://www.yahoo.com/",
     "http://www.gmail.com/",
     "http://www.amazon.com/"
