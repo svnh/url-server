@@ -4,18 +4,20 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "mocha "
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/svnh/celtra.git"
   },
-  "author": "",
+  "author": "Savannah Kunovsky (sekunovsky@gmail.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/svnh/celtra/issues"
   },
   "homepage": "https://github.com/svnh/celtra#readme",
   "dependencies": {
+    "express": "4.11.2"
   }
 }
