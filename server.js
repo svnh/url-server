@@ -1,12 +1,14 @@
+// Environment variables
+var port = process.env.PORT || 3000;
+var dir = __dirname;
+
 // Third party libraries
 var express = require('express');
 
 // Express server config
 var app = express();
-
-// Environment variables
-var port = process.env.PORT || 3000;
-var dir = __dirname;
+var fileName = dir + '/public';
+app.use(express.static(fileName));
 
 // Import data
 var urls = require(dir + '/data/urls.json');
@@ -17,9 +19,7 @@ app.get('/urls', function(req, res) {
 });
 
 app.get('/', function(req, res) {
-  var fileName = dir + '/public';
-  app.use(express.static(fileName));
-
+  // Use express static file server to serve HTML
   res.sendFile('index.html', { root: fileName });
 });
 
